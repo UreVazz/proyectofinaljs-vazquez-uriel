@@ -1,19 +1,19 @@
 body {
-            font-family: Arial, sans-serif;
+            font-family: "Roboto", sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f0f4f8; /* Un color de fondo suave */
+            background-color: #ededed;
             margin: 0;
             padding: 20px;
             text-align: center;
-            color: #333;
+            color: #1f1f1f;
         }
         h1 {
-            color: #2c3e50; /* Azul oscuro */
-            margin-bottom: 15px;
+            color: #1f1f1f;
+            margin-bottom: 5px;
         }
         p {
             max-width: 600px;
@@ -22,57 +22,50 @@ body {
         }
         button {
             padding: 12px 25px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             cursor: pointer;
-            background-color: #3498db; /* Azul primario */
+            background-color: rgb(17, 87, 133); 
             color: white;
             border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(6, 9, 70, 0.1);
             transition: background-color 0.3s ease, transform 0.1s ease;
+            margin-bottom: 30px;;
         }
         button:hover {
-            background-color: #2980b9;
+            background-color: #063554;
             transform: translateY(-2px);
         }
         button:active {
             transform: translateY(0);
         }
-        #instructions {
-            margin-top: 30px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #e9eff5;
-            font-size: 0.9em;
-            color: #555;
-            width: 80%;
-            max-width: 600px;
-        }
+       
         #resumen-juego {
-            margin-top: 30px;
             padding: 20px;
-            border: 2px solid #a8dadc; /* Un borde más distintivo */
-            border-radius: 10px;
-            background-color: #f1faee; /* Un fondo más claro */
+            border-radius: 16px;
+            background-color: #f1faee; 
             width: 80%;
             max-width: 600px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: none; /* Oculto al inicio, se muestra con JS */
+            display: none; 
         }
         #resumen-juego h2 {
-            color: #1d3557; /* Azul oscuro */
+            color: #1f1f1f;
             margin-bottom: 15px;
         }
-        #resumen-juego p {
-            font-size: 1.2em;
+        #resumen-juego {
+            font-size: 1.1em;
+            font-weight: regular;
+            margin: 0px 0;
+            color: rgb(17, 87, 133); 
+        }
+
+        span{
             font-weight: bold;
-            margin: 10px 0;
-            color: #457b9d; /* Azul medio */
+            color: #1f1f1f;
         }
         #resumen-mensaje {
             font-size: 1.1em;
-            color: #e63946; /* Rojo para el mensaje de resumen */
-            font-style: italic;
+            color: #e63946; 
+            font-weight: bold;
             margin-top: 20px;
         }
