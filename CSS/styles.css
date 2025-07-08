@@ -1,0 +1,78 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f4f8; /* Un color de fondo suave */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50; /* Azul oscuro */
+            margin-bottom: 15px;
+        }
+        p {
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #3498db; /* Azul primario */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        #instructions {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #e9eff5;
+            font-size: 0.9em;
+            color: #555;
+            width: 80%;
+            max-width: 600px;
+        }
+        #resumen-juego {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #a8dadc; /* Un borde más distintivo */
+            border-radius: 10px;
+            background-color: #f1faee; /* Un fondo más claro */
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none; /* Oculto al inicio, se muestra con JS */
+        }
+        #resumen-juego h2 {
+            color: #1d3557; /* Azul oscuro */
+            margin-bottom: 15px;
+        }
+        #resumen-juego p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #457b9d; /* Azul medio */
+        }
+        #resumen-mensaje {
+            font-size: 1.1em;
+            color: #e63946; /* Rojo para el mensaje de resumen */
+            font-style: italic;
+            margin-top: 20px;
+        }

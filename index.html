@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador: Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <h1>Simulador: Piedra, Papel o Tijera</h1>
+    <p>
+        ¡Bienvenido al clásico juego de Piedra, Papel o Tijera contra la computadora!
+        Usa los cuadros de diálogo para elegir tu jugada y ver el resultado.
+        La lógica del juego y el seguimiento de los puntajes se manejan con JavaScript.
+    </p>
+    <button id="iniciarJuegoBtn">¡Jugar Ahora!</button>
+
+    <div id="resumen-juego">
+        <h2>Resumen del Juego</h2>
+        <p>Tú ganaste: <span id="victorias-usuario">0</span> rondas</p>
+        <p>Computadora ganó: <span id="victorias-computadora">0</span> rondas</p>
+        <p id="resumen-mensaje"></p>
+    </div>
+
+    <div id="instructions">
+        <p><strong>Instrucciones:</strong></p>
+        <ul>
+            <li>Haz clic en "¡Jugar Ahora!" para empezar.</li>
+            <li>Sigue las indicaciones en los cuadros de diálogo (prompt, alert, confirm).</li>
+            <li>Abre la Consola de tu navegador (F12 o Clic Derecho > Inspeccionar > Consola) para ver los detalles del juego.</li>
+            <li>Los resultados se actualizarán en esta página.</li>
+        </ul>
+    </div>
+
+    <script src="/JS/main.js"></script>
+</body>
+</html>
