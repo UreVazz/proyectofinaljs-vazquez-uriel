@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador: Piedra, Papel o Tijera</title>
+    <title>Lista de tareas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script defer src="/JS/main.js"></script>
+    <script src="/JS/main.js" defer></script>
 </head>
 <body>
-    <h1>Simulador: Piedra, Papel o Tijeras</h1>
-    <p>
-        ¡Bienvenido al juego de Piedra, Papel o Tijera contra la computadora!
-        Usa los cuadros de diálogo para elegir tu jugada y ver el resultado.
-    </p>
-    <button id="iniciarJuegoBtn">¡Jugar Ahora!</button>
 
-    <div id="resumen-juego">
-        <h2>Resumen del Juego</h2>
-        <p>Tú ganaste: <span id="victorias-usuario">0</span> rondas</p>
-        <p>La Computadora ganó: <span id="victorias-computadora">0</span> rondas</p>
-        <p>Rondas Jugadas: <span id="rondas-jugadas">0</span></p>
-        <p>Empates: <span id="rondas-empatadas">0</span></p>
-        <p id="resumen-mensaje"></p>
+    <div class="contenedor-principal">
+        <h1>Mi Lista de Tareas</h1>
+
+        <form id="formulario-tarea">
+            <input type="text" id="input-nueva-tarea" placeholder="Escribe una nueva tarea..." required>
+            <button type="submit" id="btn-agregar-tarea">Añadir Tarea</button>
+        </form>
+
+        <div id="mensajes-usuario" class="mensaje"></div>
+
+        <ul id="lista-de-tareas">
+            </ul>
+
+        <button id="btn-limpiar-completadas" class="btn-secundario">Limpiar Tareas Completadas</button>
     </div>
 
+    <script src="js/main.js"></script> 
 </body>
 </html>
