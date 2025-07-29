@@ -13,21 +13,26 @@
 <body>
 
     <div class="contenedor-principal">
+        <img class="imgtop" src="Img/todo.png" alt="icono-to-do-list">
         <h1>Mi Lista de Tareas</h1>
-
-        <form id="formulario-tarea">
-            <input type="text" id="input-nueva-tarea" placeholder="Escribe una nueva tarea..." required>
-            <button type="submit" id="btn-agregar-tarea">Añadir Tarea</button>
+        
+        <form id="formulario-tareas">
+            <input type="text" id="input-nueva-tarea" placeholder="Escribe una tarea..." required>
+            <button class= "mainbtn" type="submit" id="btn-agregar-tarea">Añadir tarea</button>
         </form>
+        <div id="mensaje-usuario" class="mensaje"></div>
+        
+        
+        <div>
+            <h2>Tareas pendientes</h2><ul id="lista-de-tareas">
+            </ul></div>
 
-        <div id="mensajes-usuario" class="mensaje"></div>
+        <div id="contenedor-tareas-completadas">
+            <h2>Tareas Completadas</h2> <ul id="lista-de-tareas-completadas">
+                </ul>
+        </div>
 
-        <ul id="lista-de-tareas">
-            </ul>
-
-        <button id="btn-limpiar-completadas" class="btn-secundario">Limpiar Tareas Completadas</button>
+        <button id="btn-limpiar-completadas" class="btn-secundario">Limpiar tareas completadas</button>
     </div>
-
-    <script src="js/main.js"></script> 
 </body>
 </html>
