@@ -22,7 +22,7 @@ function mostrarMensaje (mensaje, tipo){
         mensajesUsuarioDiv.style.display = "none";
         mensajesUsuarioDiv.textContent = "";
         mensajesUsuarioDiv.className = "mensaje";
-    }, 3000); 
+    }, 4000); 
 }
 
 function guardarTareasEnLocalStorage (tareasParaGuardar) {
