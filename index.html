@@ -9,14 +9,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="/JS/main.js" defer></script>
+    <!-- Antes de tu script principal -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </head>
 <body>
 <header>
     <h1>alebrijos</h1>
-    <div class="cart-icon">
-      🛒
-      <span class="cart-count">0</span>
-    </div>
+<a href="/Pages/cart.html" class="cart-icon">
+  🛒
+  <span class="cart-count">0</span>
+</a>
   </header>
 
   <!-- ===== PRODUCTOS ===== -->
@@ -24,33 +28,7 @@
     <div class="section1">
     <h2>Nuestros productos</h2>
     <p>Tienda mexicana que promueve al arte de los artesanos de Oaxaca, llenando cada rincón con arte inspirado en la cosmovisión de alebrijes, piezas únicas hechas con manos mexicanas.</p>
-    </div>
-
-     <div class="section2"></div>
-    <h2>Nuestros productos</h2>
-    <div class="product-grid">
-
-      <div class="product-card">
-        <img src="/img/ale.jpg" alt="Producto 1">
-        <h3>Producto 1</h3>
-        <p>$25.00 USD</p>
-        <a href="#" class="btn-add">Agregar al carrito</a>
-      </div>
-
-      <div class="product-card">
-        <img src="/img/ale2.jpg" alt="Producto 2">
-        <h3>Producto 2</h3>
-        <p>$40.00 USD</p>
-        <a href="#" class="btn-add">Agregar al carrito</a>
-      </div>
-
-      <div class="product-card">
-        <img src="/img/ale3.jpg" alt="Producto 3">
-        <h3>Producto 3</h3>
-        <p>$60.00 USD</p>
-        <a href="#" class="btn-add">Agregar al carrito</a>
-      </div>
-
+    <div id="lista-productos" class="product-grid">
     </div>
   </main>
 

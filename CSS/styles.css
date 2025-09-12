@@ -5,6 +5,10 @@
       font-family: Arial, sans-serif;
     }
 
+    a{
+      text-decoration: none;
+      
+    }
     body {
       background-color: #f8f8f8;
       color: #333;
@@ -19,6 +23,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;   
+      top: 0;        
+      left: 0;
+      z-index: 20;
+      width: 100%;
     }
 
     header h1 {
@@ -59,41 +68,6 @@
       padding: 0 1rem;
     }
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 1rem;
-      transition: transform 0.2s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .product-card h3 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.2rem;
-    }
-
-    .product-card p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      color: #666;
-    }
 
     .btn-add {
       display: inline-block;
@@ -106,18 +80,6 @@
       transition: background 0.2s;
     }
 
-    .btn-add:hover {
-      background: #333;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
 
     /* ===== TABLA DEL CARRITO ===== */
 .cart-table {
@@ -191,3 +153,77 @@
 .checkout-summary li {
   margin-bottom: 0.5rem;
 }
+
+
+button{
+  padding: 16px 24px;
+  background-color: #1f1f1f;
+  color: #fff;
+  border:none;
+  border-radius: 16px;
+}
+button:hover{
+  background-color: #333;
+  cursor: pointer;
+}
+
+.card-de-producto{
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+#lista-productos{
+  width: 100%;
+  flex-direction: row;
+}
+
+
+  .product-grid {
+  display: grid;
+  width: 100%;
+    grid-template-columns: repeat(4, 30%);
+    margin-top: 20px;
+    padding: 24px 0px;
+    justify-content: space-between;
+    align-content: center;
+    gap: 16px;
+    }
+
+.card-de-producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px 24px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+ .card-de-producto:hover {
+      transform: translateY(-5px);
+    }
+
+.card-de-producto img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+    .card-de-producto h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .card-de-producto p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+
+    footer{
+      text-align: center;
+      padding: 40px 16px;
+      border-top: 1px solid #ccc;
+    }

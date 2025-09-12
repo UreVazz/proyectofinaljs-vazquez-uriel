@@ -4,35 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout - Mi Tienda</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
+    <script src="/JS/checkout.js" defer></script>
+    <script src="/JS/checkfinal.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
-    <h1>Mi Tienda</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cart.html">Carrito</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-      </ul>
-    </nav>
-    <div class="cart-icon">
-      🛒
-      <span class="cart-count">2</span>
-    </div>
+<header>
+    <a href="/index.html"><h1>alebrijos</h1></a>
+<a href="/Pages/cart.html" class="cart-icon">
+  🛒
+  <span class="cart-count">0</span>
+</a>
   </header>
 
   <!-- CONTENIDO DEL CHECKOUT -->
   <main>
+        <a href="./cart.html">Regresar a carrito</a>
     <h2 style="margin-bottom: 1.5rem;">Finalizar compra</h2>
 
     <div class="checkout-container">
       <!-- FORMULARIO -->
       <section class="checkout-form">
         <h3>Datos de envío</h3>
-        <form>
+        <form id="checkout-form">
           <label for="name">Nombre completo</label>
           <input type="text" id="name" required>
 
@@ -64,10 +62,8 @@
       <section class="checkout-summary">
         <h3>Resumen del pedido</h3>
         <ul>
-          <li>Producto 1 x1 - $25.00</li>
-          <li>Producto 2 x2 - $80.00</li>
         </ul>
-        <p><strong>Total: $105.00</strong></p>
+        <p><strong></strong></p>
       </section>
     </div>
   </main>
