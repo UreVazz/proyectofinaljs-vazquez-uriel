@@ -6,9 +6,13 @@
     }
 
     a{
-      text-decoration: none;
-      
+      all: unset;      
     }
+
+    a:hover{
+      cursor: pointer;
+    }
+    
     body {
       background-color: #f8f8f8;
       color: #333;
@@ -69,17 +73,6 @@
     }
 
 
-    .btn-add {
-      display: inline-block;
-      background: #111;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-
 
     /* ===== TABLA DEL CARRITO ===== */
 .cart-table {
@@ -105,9 +98,14 @@
 
 /* ===== TOTAL DEL CARRITO ===== */
 .cart-total {
-  text-align: right;
-  margin-top: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2rem;
 }
+
 
 /* ===== CHECKOUT ===== */
 .checkout-container {
@@ -154,8 +152,41 @@
   margin-bottom: 0.5rem;
 }
 
+.btn-sumar, .btn-restar, .btn-eliminar {
+  padding: 8px 12px;
+  background-color: #ccc;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 8px;
+  margin: 0 4px;
+}
 
-button{
+
+td{
+  padding: 16px 16px;
+  border-bottom: 1px solid #ccc;;
+}
+
+.btn-vaciar{
+    padding: 16px 24px;
+  background-color: #ccc;
+  color: #1f1f1f;
+  border:none;
+  border-radius: 16px;
+}
+.btn-vaciar:hover{
+  background-color: #ccc;
+}
+
+
+.btngroupcard{
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  margin-left: 88px;
+}
+
+button, .btn-add{
   padding: 16px 24px;
   background-color: #1f1f1f;
   color: #fff;
@@ -226,4 +257,21 @@ button:hover{
       text-align: center;
       padding: 40px 16px;
       border-top: 1px solid #ccc;
+    }
+
+
+    .containercartmain{
+      display: flex;
+      flex-direction: column;
+      padding: 88px 32px;
+      justify-content: space-between;
+      align-content: start;
+    }
+
+    .linkvolver{
+      font-size: 1rem;
+      color: #1f1f1f;
+      margin-bottom: 16px;
+      display: inline-block;
+      text-decoration: underline;
     }

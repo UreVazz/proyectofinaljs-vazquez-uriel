@@ -27,7 +27,7 @@
     "id": 4,
     "nombre": "Gato",
     "precio": 75.00,
-    "imagen": "/img/ale4.jpg",
+    "imagen": "img/ale4.jpg",
     "descripcion": "Tallado en madera de roble curado con aditivo, pintura acrílica con fijador, tamaño 40 x 30cm",
     "stock": 3
   },

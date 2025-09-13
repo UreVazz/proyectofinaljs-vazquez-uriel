@@ -22,13 +22,13 @@
   </header>
 
   <!-- CONTENIDO DEL CARRITO -->
-  <main>
-    <a href="../index.html">Seguir comprando</a>
+  <main class="containercartmain">
+    <div class="productoslistcartcontainer">
+    <a class="linkvolver" href="../index.html">Seguir comprando</a>
     <h2 style="margin-bottom: 1.5rem;">Tu carrito</h2>
-    
     <table class="cart-tabla">
       <thead>
-        <tr>
+        <tr class="tituloitemcart">
           <th>Producto</th>
           <th>Precio</th>
           <th>Cantidad</th>
@@ -39,11 +39,13 @@
 
       </tbody>
     </table>
+    </div>
 
     <div class="cart-total">
       <p><strong>Total: $105.00</strong></p>
-      <a href="checkout.html" class="btn-add">Proceder al pago</a>
+      <div class="btngroupcard">
       <button class="btn-vaciar">Vaciar carrito</button>
+      <a href="checkout.html" class="btn-add">Proceder al pago</a></div>
     </div>
   </main>
 
