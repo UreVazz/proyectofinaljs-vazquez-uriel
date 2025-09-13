@@ -51,7 +51,7 @@
     "id": 7,
     "nombre": "Águila",
     "precio": 55.00,
-    "imagen": "/img/ale7.jpg",
+    "imagen": "img/ale7.jpg",
     "descripcion": "Figura de madera tallada y pintada, tamaño 35 x 20cm",
     "stock": 5
   },

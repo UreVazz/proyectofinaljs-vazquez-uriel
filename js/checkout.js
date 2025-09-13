@@ -133,7 +133,7 @@ form.addEventListener("submit", function(e) {
       localStorage.removeItem("cart"); 
       cart = [];
       if(cartCount) cartCount.textContent = 0; 
-      window.location.href = "/index.html"; 
+      window.location.href = "../index.html"; 
     });
 });
 
