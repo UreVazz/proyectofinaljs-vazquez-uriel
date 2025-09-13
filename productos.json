@@ -3,7 +3,7 @@
     "id": 1,
     "nombre": "Perico",
     "precio": 25.00,
-    "imagen": "/img/ale.jpg",
+    "imagen": "img/ale.jpg",
     "descripcion": "Tallado en madera de roble curado con aditivo, pintura acrílica con fijador, tamaño 30 x 25cm",
     "stock": 4
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "nombre": "Canguro",
     "precio": 40.00,
-    "imagen": "/img/ale2.jpg",
+    "imagen": "img/ale2.jpg",
     "descripcion": "Tallado en madera de roble curado con aditivo, pintura acrílica con fijador, tamaño 30 x 20cm",
     "stock": 2
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "nombre": "Perro",
     "precio": 60.00,
-    "imagen": "/img/ale3.jpg",
+    "imagen": "img/ale3.jpg",
     "descripcion": "Tallado en madera de roble curado con aditivo, pintura acrílica con fijador, tamaño 40 x 25cm",
     "stock": 3
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "nombre": "Conejo",
     "precio": 35.00,
-    "imagen": "/img/ale5.jpg",
+    "imagen": "img/ale5.jpg",
     "descripcion": "Tallado en madera de roble curado con aditivo, pintura acrílica con fijador, tamaño 35 x 22cm",
     "stock": 2
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "nombre": "Dragón",
     "precio": 90.00,
-    "imagen": "/img/ale6.jpg",
+    "imagen": "img/ale6.jpg",
     "descripcion": "Escultura de madera con detalles pintados a mano, tamaño 50 x 25cm",
     "stock": 1
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "nombre": "Tigre",
     "precio": 80.00,
-    "imagen": "/img/ale8.jpg",
+    "imagen": "img/ale8.jpg",
     "descripcion": "Tallado en madera robusta, pintura acrílica brillante, tamaño 45 x 25cm",
     "stock": 2
   }

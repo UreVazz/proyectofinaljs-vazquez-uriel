@@ -9,7 +9,7 @@ const cartItems = document.querySelector(".cart-items");
 const clearCartBtn = document.querySelector(".clear-cart");
 
 function cargarProductos() {
-    fetch("./productos.json")
+    fetch("productos.json")
     .then(response => response.json())
     .then(datos => {productos = datos;  mostrarProductos();
 
